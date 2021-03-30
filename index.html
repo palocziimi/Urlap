@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+   <meta charset="UTF-8">
+   <title>Űrlap</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   <form>
+      <div id="main">
+         <h1>Alapadatok</h1>
+         <div id="adatok">
+            <table>
+               <tr>
+                  <td class="szempont"><p>Teljes neved</p></td>
+                  <td class="input"><input type="text" name="name" id="name"></td>
+               </tr>
+               <tr>
+                  <td class="szempont"><p>Nemed</p></td>
+                  <td class="input">
+                     <label class="container">Férfi
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                      <label class="container">Nő
+                        <input type="radio" name="radio">
+                        <span class="checkmark"></span>
+                      </label>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="szempont"><p>Email <span>*</span></p></td>
+                  <td class="input"><input type="email" name="email" id="email" required></td>
+               </tr>
+               <tr>
+                  <td class="szempont"><p>Telefonszám <span>*</span></p></td>
+                  <td class="input">
+                     <select name="orszag" id="orszag">
+                        <option value="mo">36</option>
+                     </select>
+                     <input type="tel" name="tel" id="tel" pattern="[0-9]{2}-[0-9]{3}-[0-9]{4}" placeholder="12-345-6789" style="width: 80%;" required>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="szempont">Levelezés<br>alapértelmezett nyelve <span>*</span></td>
+                  <td class="input">
+                     <select name="nyelv" id="nyelv">
+                        <option value="magyar">Magyar</option>
+                     </select>
+                  </td>
+               </tr>
+               <tr>
+                  <td class="szempont">Születési idő</td>
+                  <td class="input">
+                     <select name="year" id="year">
+                        <option value="year">Év</option>
+                        <option value="year">2021</option>
+                     </select>
+                     <select name="month" id="month">
+                        <option value="month">Hónap</option>
+                        <option value="month">Január</option>
+                        <option value="month">Február</option>
+                        <option value="month">Március</option>
+                        <option value="month">Április</option>
+                        <option value="month">Május</option>
+                        <option value="month">Június</option>
+                        <option value="month">Július</option>
+                        <option value="month">Augusztus</option>
+                        <option value="month">Szeptember</option>
+                        <option value="month">Október</option>
+                        <option value="month">November</option>
+                        <option value="month">December</option>
+                     </select>
+                     <select name="day" id="day">
+                        <option value="day">Nap</option>
+                        <option value="day">1</option>
+                        <option value="day">2</option>
+                        <option value="day">3</option>
+                        <option value="day">4</option>
+                        <option value="day">5</option>
+                        <option value="day">6</option>
+                        <option value="day">7</option>
+                        <option value="day">8</option>
+                        <option value="day">9</option>
+                        <option value="day">10</option>
+                        <option value="day">11</option>
+                        <option value="day">12</option>
+                        <option value="day">13</option>
+                        <option value="day">14</option>
+                        <option value="day">15</option>
+                        <option value="day">16</option>
+                        <option value="day">17</option>
+                        <option value="day">18</option>
+                        <option value="day">19</option>
+                        <option value="day">20</option>
+                        <option value="day">21</option>
+                        <option value="day">22</option>
+                        <option value="day">23</option>
+                        <option value="day">24</option>
+                        <option value="day">25</option>
+                        <option value="day">26</option>
+                        <option value="day">27</option>
+                        <option value="day">28</option>
+                        <option value="day">29</option>
+                        <option value="day">30</option>
+                        <option value="day">31</option>
+
+                     </select>
+                  </td>
+               </tr>
+               <tr>
+                  <td></td>
+                  <td><p>Add meg a születésnapodat és várd a<br>meglepetést!</p></td>
+               </tr>
+               <tr>
+                  <td colspan="2"><input type="submit" value="Mentés" id="mentes"></td>
+               </tr>
+            </table>
+         </div>
+      </div>
+   </form>
+</body>
+
+</html>
